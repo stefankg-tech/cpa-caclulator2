@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CPA Calculator</h1>
+  <div>
+    <label>CPC (Cost Per Click): <input type="number" id="cpc" /></label><br>
+    <label>Optin Conversion Rate (%): <input type="number" id="optinCR" /></label><br>
+    <label>Optin to Call Conversion Rate (%): <input type="number" id="optinToCallCR" /></label><br>
+    <label>Call to Sale Conversion Rate (%): <input type="number" id="callToSaleCR" /></label><br><br>
+    <button onclick="calculateCPA()">Calculate</button>
+  </div>
+  <div>
+    <h3>Results:</h3>
+    <p>Optin CPA: <span id="optinCPA"></span></p>
+    <p>Call CPA: <span id="callCPA"></span></p>
+    <p>Sale CPA: <span id="saleCPA"></span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
